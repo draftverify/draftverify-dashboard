@@ -2,7 +2,7 @@
 
 // TODO: paste your Apps Script deployment URL here:
 const DASHBOARD_API_URL =
-  "https://script.google.com/macros/s/AKfycby-ri6s6pbpmq0MOgsuhW24B1zi_0sWLBPlW62HSSTyMrH3hRmNwK4vo_lTTBHYW2ZzOA/exec";
+  "https://script.google.com/macros/s/AKfycbyCc1JhVIcDt-6x-8GmgQHE9Rsr9cFA_qyOmC86WlhWr0rhh6VStSk2-JWx2BaOW0UdLA/exec";
 
 const DEFAULT_BREWERY = "Norris"; // change to your brewery name if you want
 

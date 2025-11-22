@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DraftVerify Brewery Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dvdb-app">
+    <header class="dvdb-header">
+      <div class="dvdb-logo-group">
+        <div class="dvdb-logo-mark">DV</div>
+        <div class="dvdb-logo-text">
+          <div class="dvdb-logo-title">DraftVerify</div>
+          <div class="dvdb-logo-subtitle">Brewery Dashboard</div>
+        </div>
+      </div>
+      <div class="dvdb-controls">
+        <label class="dvdb-label">
+          Brewery
+          <input
+            id="dvdb-brewery-input"
+            class="dvdb-input"
+            type="text"
+            placeholder="e.g. Norris"
+          />
+        </label>
+        <button id="dvdb-load-btn" class="dvdb-btn">Load</button>
+      </div>
+    </header>
+
+    <main class="dvdb-main">
+      <section class="dvdb-panel">
+        <div class="dvdb-panel-header">
+          <h2>Lines overview</h2>
+          <span id="dvdb-lines-count" class="dvdb-chip">0 lines</span>
+        </div>
+        <div id="dvdb-lines-container" class="dvdb-table-wrapper">
+          <table class="dvdb-table">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Location</th>
+                <th>Product</th>
+                <th>Last check</th>
+                <th>Status</th>
+                <th>OK</th>
+                <th>Mismatch</th>
+              </tr>
+            </thead>
+            <tbody id="dvdb-lines-body">
+              <tr>
+                <td colspan="7" class="dvdb-empty">No data loaded yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="dvdb-panel">
+        <div class="dvdb-panel-header">
+          <h2>Recent activity</h2>
+          <span id="dvdb-events-count" class="dvdb-chip">0 events</span>
+        </div>
+        <div id="dvdb-events-container" class="dvdb-table-wrapper">
+          <table class="dvdb-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Coupler</th>
+                <th>Keg</th>
+                <th>Product</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody id="dvdb-events-body">
+              <tr>
+                <td colspan="5" class="dvdb-empty">No events yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="dvdb-footer">
+      <span id="dvdb-status-text">Ready.</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
